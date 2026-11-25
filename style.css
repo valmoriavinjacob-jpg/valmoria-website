@@ -1,166 +1,57 @@
-body { 
- font-family: Arial, sans-serif; 
- margin: 40px; 
+/*general settings*/
+* { 
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
 } 
 
 
-h3 {
+
+
+.headerText {
+  color: red;
+}
+
+.sectionText {
+  color: #7A1F2B;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: antiquewhite;
+  color: #FFF8ED;
+}
+
+/*header*/
+header {
+  width: 100%;
+  min-height: 90px;
+  background-color: antiquewhite;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 5%;
+  gap: 20px;
+
+  position: sticky;
+  top: 0;
+
+}
+
+/*logo*/
+.logo {
   color: #D9A441;
-}
-
-h1 { 
- color: crimson; 
-} 
-
-
-
-* {
-  box-sizing: border-box;
-}
-
-h2 {
-  color: darkblue;
-  border-bottom: 2px solid teal;
-  padding-bottom: 4px;
-}
-
-.card {
-  background-color: #7A1F2B;
-  border: 1px solid black;
-  padding: 16px;
-  margin-bottom: 12px;
-}
-
-.featured {
-  border: 3px solid darkorange;
-}
-
-.note {
-  color: gray;
-  font-size: 14px;
-}
-
-#top {
-  background-color: darkblue;
-  color: white;
-  padding: 24px;
-  text-align: center;
-}
-
-h1, h2, h3 {
-  font-family: Georgia, serif;
-}
-
-header p {
-  font-style: italic;
-}
-
-section > p {
-  border-left: 4px solid teal;
   padding-left: 10px;
 }
 
-h3 + p { 
- font-weight: bold; 
+.hero {
+  min-height: 700px;
+  padding: 100px 8%;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url(images/street-market-vendor-displaying-various-types-longganisa-sausages-wide-assortment-traditional-filipino-hanging-strings-429628380.webp);
 }
 
-
-h3 { 
- color: teal; 
-} 
-h3 { 
- color: teal; 
-} 
-h3 { 
- color: teal; 
-} 
-h3 { 
- color: teal; 
-} 
-h3 { 
- color: teal; 
-} 
-h3 { 
- color: teal; 
-} 
-h3 { 
- color: teal; 
-} 
-h3 { 
- color: teal; 
-} 
-
-
-h3 ~ p {
-  margin-left: 20px;
-}
-
-nav {
-  margin: 16px 0;
-}
-
-nav a {
-  color: darkblue;
-  text-decoration: none;
-  margin-right: 16px;
-}
-
-nav a:hover {
-  color: darkorange;
-  text-decoration: underline;
-}
-
-li {
-  padding: 6px;
-}
-
-li:first-child {
-  font-weight: bold;
-}
-
-li:last-child {
-  color: crimson;
-}
-
-li:nth-child(even) {
-  background-color: solid green;
-}
-
-input:focus {
-  outline: 3px solid darkorange;
-}
-
-label {
-  display: block;
-  margin-top: 10px;
-}
-
-input {
-  display: block;
-  padding: 8px;
-  margin-top: 4px;
-}
-
-input[type="text"] {
-  border: 2px solid teal;
-}
-
-input[type="email"] {
-  border: 2px solid darkorange;
-}
-
-input[type="submit"] {
-  margin-top: 14px;
-  padding: 8px 24px;
-  background-color: darkblue;
-  color: white;
-  border: none;
-}
-
-a[href^="https"] {
-  font-style: italic;
-}
-
-a[target="_blank"] {
-  border-bottom: 1px dashed darkblue;
-}
